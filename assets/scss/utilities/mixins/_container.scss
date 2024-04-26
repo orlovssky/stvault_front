@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "/assets/scss/utilities/variables/media-queries";
+
+@mixin base($size: "lg") {
+  width: 100%;
+  max-width: map.get(media-queries.$breakpoints, $size);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+}

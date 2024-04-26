@@ -1,0 +1,37 @@
+@use "sass:map";
+@use "/assets/scss/utilities/variables/size-values";
+@use "/assets/scss/utilities/variables/media-queries";
+@use "/assets/scss/utilities/variables/colors";
+
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: map.get(size-values.$base, 18) map.get(size-values.$base, 6);
+
+  background-color: map.get(colors.$primary, 50);
+  border-radius: map.get(size-values.$radius, "md");
+
+  &__icon {
+    width: map.get(size-values.$base, 24);
+    height: auto;
+  }
+
+  &__text {
+    margin-left: map.get(size-values.$base, 6);
+    font-weight: 700;
+  }
+
+  &__name {
+    font-size: map.get(size-values.$base, 10);
+
+    @media (min-width: map.get(media-queries.$breakpoints, "md")) {
+      font-size: map.get(size-values.$base, 16);
+    }
+  }
+
+  &__symbol {
+    font-size: map.get(size-values.$base, 7);
+  }
+}

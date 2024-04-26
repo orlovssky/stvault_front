@@ -1,0 +1,6 @@
+@use "/assets/scss/utilities/mixins/container";
+
+.content {
+  @include container.base;
+  min-height: calc(100vh - 54px - 62px);
+}
