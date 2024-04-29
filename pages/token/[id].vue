@@ -108,7 +108,7 @@ interface TokenResponse {
 }
 
 const { id } = useRoute().params;
-const { data: token, pending } = useFetch<TokenResponse>(
+const { data: token, pending } = await useFetch<TokenResponse>(
   `https://api.stvault.io/token/${id}`
 );
 </script>

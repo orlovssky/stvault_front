@@ -83,7 +83,7 @@ interface TokensResponse {
 const { push } = useRouter();
 const { search } = useHeaderSearch();
 
-const { data: tokens, pending } = useAsyncData(
+const { data: tokens, pending } = await useAsyncData(
   () => {
     let endpoint = "https://api.stvault.io/tokens";
 

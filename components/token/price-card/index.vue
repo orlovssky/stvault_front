@@ -50,7 +50,7 @@ const granularity = ref<"h1" | "d1">("d1");
 
 const { id } = useRoute().params;
 
-const { data: chart } = useAsyncData<ChartResponse>(
+const { data: chart } = await useAsyncData<ChartResponse>(
   () =>
     $fetch("https://api.stvault.io/chart", {
       query: {
