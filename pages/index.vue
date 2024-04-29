@@ -94,7 +94,6 @@ const { data: tokens, pending } = useAsyncData(
     return $fetch<TokensResponse>(endpoint);
   },
   {
-    server: false,
     watch: [search],
   }
 );

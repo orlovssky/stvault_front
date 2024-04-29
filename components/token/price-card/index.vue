@@ -60,7 +60,6 @@ const { data: chart } = useAsyncData<ChartResponse>(
       },
     }),
   {
-    server: false,
     watch: [granularity],
   }
 );

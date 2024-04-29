@@ -67,7 +67,6 @@ const { id } = useRoute().params;
 const { data: chart } = await useFetch<ChartResponse>(
   "https://api.stvault.io/chart",
   {
-    server: false,
     query: {
       tokenId: id,
       exchangeId,
