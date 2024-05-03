@@ -2,35 +2,31 @@
 @use "/assets/scss/utilities/variables/colors";
 
 $borderWidth: 1px;
-$transitionDuration: 0.15s;
-$transition: background-color $transitionDuration;
+$invisible-border: $borderWidth solid transparent;
 
-@mixin invisible-border {
-  border-color: transparent;
-  border-style: solid;
-  border-width: $borderWidth;
-}
+$transition-duration: 0.15s;
+$transition-background-color: background-color $transition-duration;
 
 @mixin primary {
-  @include invisible-border;
   color: map.get(colors.$light, 50);
-  background-color: map.get(colors.$primary, 600);
-  transition: $transition;
+  background-color: map.get(colors.$primary, 500);
+  transition: $transition-background-color;
+  border: $invisible-border;
 
   &:hover {
-    background-color: map.get(colors.$primary, 500);
+    background-color: map.get(colors.$primary, 400);
   }
 
   &:active {
-    background-color: map.get(colors.$primary, 700);
+    background-color: map.get(colors.$primary, 600);
   }
 }
 
 @mixin light {
-  @include invisible-border;
-  color: map.get(colors.$primary, 600);
+  color: map.get(colors.$primary, 500);
   background-color: map.get(colors.$primary, 100);
-  transition: $transition;
+  transition: $transition-background-color;
+  border: $invisible-border;
 
   &:hover {
     background-color: map.get(colors.$primary, 50);
@@ -42,10 +38,10 @@ $transition: background-color $transitionDuration;
 }
 
 @mixin ghost {
-  @include invisible-border;
-  color: map.get(colors.$primary, 600);
+  color: map.get(colors.$primary, 500);
   background-color: map.get(colors.$light, 50);
-  transition: $transition;
+  border: $invisible-border;
+  transition: $transition-background-color;
 
   &:hover {
     background-color: map.get(colors.$primary, 50);
@@ -57,22 +53,18 @@ $transition: background-color $transitionDuration;
 }
 
 @mixin outlined {
-  color: map.get(colors.$primary, 600);
+  color: map.get(colors.$primary, 500);
   background-color: map.get(colors.$light, 50);
   transition:
-    $transition,
-    border-color $transitionDuration;
-  border-color: map.get(colors.$primary, 600);
-  border-style: solid;
-  border-width: $borderWidth;
+    $transition-background-color,
+    border-color $transition-duration;
+  border: $borderWidth solid map.get(colors.$primary, 500);
 
   &:hover {
-    border-color: map.get(colors.$primary, 600);
     background-color: map.get(colors.$primary, 50);
   }
 
   &:active {
-    border-color: map.get(colors.$primary, 100);
     background-color: map.get(colors.$primary, 100);
   }
 }

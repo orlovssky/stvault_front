@@ -1,11 +1,11 @@
-import { baseLocale } from "~/utilities/constants/locale";
+import { BASE_LOCALE } from "~/utilities/constants/locale";
 
 export const formatNumber = (value: number) => {
-  return new Intl.NumberFormat(baseLocale).format(value);
+  return new Intl.NumberFormat(BASE_LOCALE).format(value);
 };
 
 export const formatCurrency = (value: number, currency: string) => {
-  return new Intl.NumberFormat(baseLocale, {
+  return new Intl.NumberFormat(BASE_LOCALE, {
     style: "currency",
     currency,
     currencyDisplay: "narrowSymbol",

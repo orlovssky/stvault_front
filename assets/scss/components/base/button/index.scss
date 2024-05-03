@@ -1,16 +1,17 @@
 @use "sass:map";
-@use "/assets/scss/utilities/variables/colors";
+
 @use "/assets/scss/utilities/variables/size-values";
+@use "/assets/scss/utilities/mixins/full-reset";
 @use "/assets/scss/utilities/mixins/button/variants";
-@use "/assets/scss/utilities/mixins/reset";
 
 .button {
-  @include reset.button;
+  @include full-reset.button;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 500;
+  box-sizing: border-box;
 
   &--primary {
     @include variants.primary;
@@ -27,29 +28,11 @@
   &--outlined {
     @include variants.outlined;
   }
-  &--xs {
-    padding: map.get(size-values.$base, 2) map.get(size-values.$base, 6);
-    border-radius: map.get(size-values.$radius, "xs");
-    font-size: map.get(size-values.$base, 6);
-  }
-  &--sm {
-    padding: map.get(size-values.$base, 4) map.get(size-values.$base, 8);
-    border-radius: map.get(size-values.$radius, "sm");
-    font-size: map.get(size-values.$base, 8);
-  }
+
   &--md {
-    padding: map.get(size-values.$base, 4) map.get(size-values.$base, 8);
-    border-radius: map.get(size-values.$radius, "md");
-    font-size: map.get(size-values.$base, 10);
-  }
-  &--lg {
-    padding: map.get(size-values.$base, 5) map.get(size-values.$base, 10);
+    padding: 0 map.get(size-values.$base, 4);
     border-radius: map.get(size-values.$radius, "lg");
-    font-size: map.get(size-values.$base, 12);
-  }
-  &--xl {
-    padding: map.get(size-values.$base, 6) map.get(size-values.$base, 12);
-    border-radius: map.get(size-values.$radius, "xl");
-    font-size: map.get(size-values.$base, 14);
+    font-size: map.get(size-values.$base, 3.5);
+    height: map.get(size-values.$base, 9);
   }
 }

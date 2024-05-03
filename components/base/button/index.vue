@@ -13,7 +13,7 @@
       'button--xl': props.size === 'xl',
     }"
   >
-    <slot></slot>
+    <slot />
   </button>
 </template>
 
@@ -22,7 +22,7 @@ import type { Props } from "~/typings/base/button";
 
 const props = withDefaults(defineProps<Props>(), {
   variant: "primary",
-  size: "sm",
+  size: "md",
 });
 </script>
 

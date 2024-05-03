@@ -1,0 +1,306 @@
+{
+  "variables": [
+    {
+      "name": "$colors",
+      "value": "( \"rose\": #f43f5e, \"pink\": #ec4899, \"fuchsia\": #d946ef, \"purple\": #a855f7, \"violet\": #8b5cf6, \"indigo\": #6366f1, \"blue\": #3b82f6, \"sky\": #0ea5e9, \"cyan\": #06b6d4, \"teal\": #14b8a6, \"emerald\": #10b981, \"green\": #22c55e, \"lime\": #84cc16, \"yellow\": #eab308, \"amber\": #f59e0b, \"orange\": #f97316, \"red\": #ef4444, \"gray\": #6b7280, \"slate\": #64748b, \"zinc\": #71717a, \"neutral\": #737373, \"stone\": #78716c, )",
+      "mapValue": [
+        {
+          "name": "rose",
+          "value": "#f43f5e",
+          "compiledValue": "#f43f5e"
+        },
+        {
+          "name": "pink",
+          "value": "#ec4899",
+          "compiledValue": "#ec4899"
+        },
+        {
+          "name": "fuchsia",
+          "value": "#d946ef",
+          "compiledValue": "#d946ef"
+        },
+        {
+          "name": "purple",
+          "value": "#a855f7",
+          "compiledValue": "#a855f7"
+        },
+        {
+          "name": "violet",
+          "value": "#8b5cf6",
+          "compiledValue": "#8b5cf6"
+        },
+        {
+          "name": "indigo",
+          "value": "#6366f1",
+          "compiledValue": "#6366f1"
+        },
+        {
+          "name": "blue",
+          "value": "#3b82f6",
+          "compiledValue": "#3b82f6"
+        },
+        {
+          "name": "sky",
+          "value": "#0ea5e9",
+          "compiledValue": "#0ea5e9"
+        },
+        {
+          "name": "cyan",
+          "value": "#06b6d4",
+          "compiledValue": "#06b6d4"
+        },
+        {
+          "name": "teal",
+          "value": "#14b8a6",
+          "compiledValue": "#14b8a6"
+        },
+        {
+          "name": "emerald",
+          "value": "#10b981",
+          "compiledValue": "#10b981"
+        },
+        {
+          "name": "green",
+          "value": "#22c55e",
+          "compiledValue": "#22c55e"
+        },
+        {
+          "name": "lime",
+          "value": "#84cc16",
+          "compiledValue": "#84cc16"
+        },
+        {
+          "name": "yellow",
+          "value": "#eab308",
+          "compiledValue": "#eab308"
+        },
+        {
+          "name": "amber",
+          "value": "#f59e0b",
+          "compiledValue": "#f59e0b"
+        },
+        {
+          "name": "orange",
+          "value": "#f97316",
+          "compiledValue": "#f97316"
+        },
+        {
+          "name": "red",
+          "value": "#ef4444",
+          "compiledValue": "#ef4444"
+        },
+        {
+          "name": "gray",
+          "value": "#6b7280",
+          "compiledValue": "#6b7280"
+        },
+        {
+          "name": "slate",
+          "value": "#64748b",
+          "compiledValue": "#64748b"
+        },
+        {
+          "name": "zinc",
+          "value": "#71717a",
+          "compiledValue": "#71717a"
+        },
+        {
+          "name": "neutral",
+          "value": "#737373",
+          "compiledValue": "#737373"
+        },
+        {
+          "name": "stone",
+          "value": "#78716c",
+          "compiledValue": "#78716c"
+        }
+      ],
+      "compiledValue": "(\"rose\": #f43f5e, \"pink\": #ec4899, \"fuchsia\": #d946ef, \"purple\": #a855f7, \"violet\": #8b5cf6, \"indigo\": #6366f1, \"blue\": #3b82f6, \"sky\": #0ea5e9, \"cyan\": #06b6d4, \"teal\": #14b8a6, \"emerald\": #10b981, \"green\": #22c55e, \"lime\": #84cc16, \"yellow\": #eab308, \"amber\": #f59e0b, \"orange\": #f97316, \"red\": #ef4444, \"gray\": #6b7280, \"slate\": #64748b, \"zinc\": #71717a, \"neutral\": #737373, \"stone\": #78716c)"
+    },
+    {
+      "name": "$grades",
+      "value": "( 50: 90%, 100: 80%, 200: 60%, 300: 40%, 400: 20%, 500: 0%, 600: -20%, 700: -40%, 800: -60%, 900: -70%, 950: -80%, )",
+      "mapValue": [
+        {
+          "name": "50",
+          "value": "90%",
+          "compiledValue": "90%"
+        },
+        {
+          "name": "100",
+          "value": "80%",
+          "compiledValue": "80%"
+        },
+        {
+          "name": "200",
+          "value": "60%",
+          "compiledValue": "60%"
+        },
+        {
+          "name": "300",
+          "value": "40%",
+          "compiledValue": "40%"
+        },
+        {
+          "name": "400",
+          "value": "20%",
+          "compiledValue": "20%"
+        },
+        {
+          "name": "500",
+          "value": "0%",
+          "compiledValue": "0%"
+        },
+        {
+          "name": "600",
+          "value": "-20%",
+          "compiledValue": "-20%"
+        },
+        {
+          "name": "700",
+          "value": "-40%",
+          "compiledValue": "-40%"
+        },
+        {
+          "name": "800",
+          "value": "-60%",
+          "compiledValue": "-60%"
+        },
+        {
+          "name": "900",
+          "value": "-70%",
+          "compiledValue": "-70%"
+        },
+        {
+          "name": "950",
+          "value": "-80%",
+          "compiledValue": "-80%"
+        }
+      ],
+      "compiledValue": "(50: 90%, 100: 80%, 200: 60%, 300: 40%, 400: 20%, 500: 0%, 600: -20%, 700: -40%, 800: -60%, 900: -70%, 950: -80%)"
+    },
+    {
+      "name": "$rose",
+      "value": "get-grades(map.get($colors, \"rose\"))",
+      "compiledValue": "(50: #feecef, 100: #fdd9df, 200: #fbb2bf, 300: #f88c9e, 400: #f6657e, 500: #f43f5e, 600: #e80d33, 700: #ae0a26, 800: #740719, 900: #570513, 950: #3a030d)"
+    },
+    {
+      "name": "$pink",
+      "value": "get-grades(map.get($colors, \"pink\"))",
+      "compiledValue": "(50: #fdedf5, 100: #fbdaeb, 200: #f7b6d6, 300: #f491c2, 400: #f06dad, 500: #ec4899, 600: #df177a, 700: #a7115b, 800: #700c3d, 900: #54092e, 950: #38061e)"
+    },
+    {
+      "name": "$fuchsia",
+      "value": "get-grades(map.get($colors, \"fuchsia\"))",
+      "compiledValue": "(50: #fbedfd, 100: #f7dafc, 200: #f0b5f9, 300: #e890f5, 400: #e16bf2, 500: #d946ef, 600: #c814e4, 700: #960fab, 800: #640a72, 900: #4b0755, 950: #320539)"
+    },
+    {
+      "name": "$purple",
+      "value": "get-grades(map.get($colors, \"purple\"))",
+      "compiledValue": "(50: #f6eefe, 100: #eeddfd, 200: #dcbbfc, 300: #cb99fa, 400: #b977f9, 500: #a855f7, 600: #8816f4, 700: #6609be, 800: #44067f, 900: #33045f, 950: #22033f)"
+    },
+    {
+      "name": "$violet",
+      "value": "get-grades(map.get($colors, \"violet\"))",
+      "compiledValue": "(50: #f3effe, 100: #e8defd, 200: #d1befb, 300: #b99dfa, 400: #a27df8, 500: #8b5cf6, 600: #5d1cf2, 700: #420bc0, 800: #2c0780, 900: #210560, 950: #160440)"
+    },
+    {
+      "name": "$indigo",
+      "value": "get-grades(map.get($colors, \"indigo\"))",
+      "compiledValue": "(50: #eff0fe, 100: #e0e0fc, 200: #c1c2f9, 300: #a1a3f7, 400: #8285f4, 500: #6366f1, 600: #2529eb, 700: #1114bb, 800: #0b0e7d, 900: #080a5e, 950: #06073e)"
+    },
+    {
+      "name": "$blue",
+      "value": "get-grades(map.get($colors, \"blue\"))",
+      "compiledValue": "(50: #ebf3fe, 100: #d8e6fd, 200: #b1cdfb, 300: #89b4fa, 400: #629bf8, 500: #3b82f6, 600: #0b5fe9, 700: #0847af, 800: #053075, 900: #042457, 950: #03183a)"
+    },
+    {
+      "name": "$sky",
+      "value": "get-grades(map.get($colors, \"sky\"))",
+      "compiledValue": "(50: #e6f6fe, 100: #cdeefc, 200: #9cdcf9, 300: #6acbf6, 400: #39b9f3, 500: #0ea5e9, 600: #0b84ba, 700: #08638c, 800: #06425d, 900: #043246, 950: #03212f)"
+    },
+    {
+      "name": "$cyan",
+      "value": "get-grades(map.get($colors, \"cyan\"))",
+      "compiledValue": "(50: #e3fafe, 100: #c6f5fd, 200: #8decfc, 300: #55e2fa, 400: #1cd8f9, 500: #06b6d4, 600: #0592aa, 700: #046d7f, 800: #024955, 900: #023740, 950: #01242a)"
+    },
+    {
+      "name": "$teal",
+      "value": "get-grades(map.get($colors, \"teal\"))",
+      "compiledValue": "(50: #e3fcf9, 100: #c8f9f4, 200: #91f3e8, 300: #59eddd, 400: #22e7d1, 500: #14b8a6, 600: #109385, 700: #0c6e64, 800: #084a42, 900: #063732, 950: #042521)"
+    },
+    {
+      "name": "$emerald",
+      "value": "get-grades(map.get($colors, \"emerald\"))",
+      "compiledValue": "(50: #e3fdf4, 100: #c6fae9, 200: #8df5d3, 300: #54f0bd, 400: #1beba6, 500: #10b981, 600: #0d9467, 700: #0a6f4d, 800: #064a34, 900: #053827, 950: #03251a)"
+    },
+    {
+      "name": "$green",
+      "value": "get-grades(map.get($colors, \"green\"))",
+      "compiledValue": "(50: #e7fbee, 100: #cff7de, 200: #a0efbd, 300: #70e69c, 400: #41de7b, 500: #22c55e, 600: #1b9e4b, 700: #147638, 800: #0e4f26, 900: #0a3b1c, 950: #072713)"
+    },
+    {
+      "name": "$lime",
+      "value": "get-grades(map.get($colors, \"lime\"))",
+      "compiledValue": "(50: #f3fce5, 100: #e7f9cc, 200: #d0f498, 300: #b8ee65, 400: #a1e932, 500: #84cc16, 600: #6aa312, 700: #4f7a0d, 800: #355209, 900: #283d07, 950: #1a2904)"
+    },
+    {
+      "name": "$yellow",
+      "value": "get-grades(map.get($colors, \"yellow\"))",
+      "compiledValue": "(50: #fef8e5, 100: #fdf1cb, 200: #fbe397, 300: #fad564, 400: #f8c730, 500: #eab308, 600: #bb8f06, 700: #8c6b05, 800: #5e4803, 900: #463602, 950: #2f2402)"
+    },
+    {
+      "name": "$amber",
+      "value": "get-grades(map.get($colors, \"amber\"))",
+      "compiledValue": "(50: #fef5e7, 100: #fdecce, 200: #fbd89d, 300: #f9c56d, 400: #f7b13c, 500: #f59e0b, 600: #c57f08, 700: #945f06, 800: #623f04, 900: #4a2f03, 950: #312002)"
+    },
+    {
+      "name": "$orange",
+      "value": "get-grades(map.get($colors, \"orange\"))",
+      "compiledValue": "(50: #fef1e8, 100: #fee3d0, 200: #fdc7a2, 300: #fbab73, 400: #fa8f45, 500: #f97316, 600: #d35a05, 700: #9f4304, 800: #6a2d03, 900: #4f2202, 950: #351601)"
+    },
+    {
+      "name": "$red",
+      "value": "get-grades(map.get($colors, \"red\"))",
+      "compiledValue": "(50: #fdecec, 100: #fcdada, 200: #f9b4b4, 300: #f58f8f, 400: #f26969, 500: #ef4444, 600: #e21313, 700: #aa0f0f, 800: #710a0a, 900: #550707, 950: #390505)"
+    },
+    {
+      "name": "$gray",
+      "value": "get-grades(map.get($colors, \"gray\"))",
+      "compiledValue": "(50: #f0f1f2, 100: #e1e3e6, 200: #c3c6cd, 300: #a5aab4, 400: #878e9b, 500: #6b7280, 600: #565b66, 700: #40444d, 800: #2b2e33, 900: #202226, 950: #15171a)"
+    },
+    {
+      "name": "$slate",
+      "value": "get-grades(map.get($colors, \"slate\"))",
+      "compiledValue": "(50: #eff1f4, 100: #dfe3e8, 200: #c0c7d2, 300: #a0abbb, 400: #818fa4, 500: #64748b, 600: #505d6f, 700: #3c4653, 800: #282e38, 900: #1e232a, 950: #14171c)"
+    },
+    {
+      "name": "$zinc",
+      "value": "get-grades(map.get($colors, \"zinc\"))",
+      "compiledValue": "(50: #f1f1f2, 100: #e2e2e5, 200: #c6c6ca, 300: #a9a9b0, 400: #8d8d95, 500: #71717a, 600: #5a5a62, 700: #444449, 800: #2d2d31, 900: #222225, 950: #171718)"
+    },
+    {
+      "name": "$neutral",
+      "value": "get-grades(map.get($colors, \"neutral\"))",
+      "compiledValue": "(50: #f1f1f1, 100: #e3e3e3, 200: #c7c7c7, 300: #ababab, 400: #8f8f8f, 500: #737373, 600: #5c5c5c, 700: #454545, 800: #2e2e2e, 900: #232323, 950: #171717)"
+    },
+    {
+      "name": "$stone",
+      "value": "get-grades(map.get($colors, \"stone\"))",
+      "compiledValue": "(50: #f2f1f0, 100: #e4e3e1, 200: #cac6c4, 300: #afaaa6, 400: #948d88, 500: #78716c, 600: #605a56, 700: #484441, 800: #302d2b, 900: #242220, 950: #181716)"
+    },
+    {
+      "name": "$primary",
+      "value": "$indigo",
+      "compiledValue": "(50: #eff0fe, 100: #e0e0fc, 200: #c1c2f9, 300: #a1a3f7, 400: #8285f4, 500: #6366f1, 600: #2529eb, 700: #1114bb, 800: #0b0e7d, 900: #080a5e, 950: #06073e)"
+    }
+  ],
+  "mixins": [
+    {
+      "name": "get-grades",
+      "parameters": [
+        "$color"
+      ]
+    }
+  ]
+}
