@@ -1,12 +1,18 @@
 @use "sass:map";
 @use "/assets/scss/utilities/variables/colors";
+@use "/assets/scss/utilities/mixins/reset";
 
 body {
   font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   color: map.get(colors.$dark, 950);
-  background-color: map.get(colors.$light, 50);
 }
 
 :focus-visible {
-  outline: solid map.get(colors.$primary, 500);
+  outline: solid map.get(colors.$primary, 600);
+}
+
+a:has(button) {
+  @include reset.anchor;
+
+  user-select: none;
 }

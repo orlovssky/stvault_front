@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "/assets/scss/utilities/variables/size-values";
+@use "/assets/scss/utilities/variables/colors";
+@use "/assets/scss/utilities/mixins/reset";
+
+.title {
+  display: inline-block;
+
+  &__text {
+    font-size: map.get(size-values.$base, 7);
+    font-weight: 700;
+  }
+
+  &__line {
+    @include reset.horizontal-rule;
+
+    width: 100%;
+    height: map.get(size-values.$base, 1);
+
+    background-color: map.get(colors.$primary, 600);
+    border-top-left-radius: map.get(size-values.$base, 1);
+    border-top-right-radius: map.get(size-values.$base, 1);
+  }
+}

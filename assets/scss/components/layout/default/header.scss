@@ -1,19 +1,30 @@
 @use "sass:map";
 @use "/assets/scss/utilities/variables/size-values";
 @use "/assets/scss/utilities/variables/colors";
+@use "/assets/scss/utilities/variables/media-queries";
 @use "/assets/scss/utilities/mixins/container";
 
 .header {
-  border-bottom: 1px solid map.get(colors.$stone, 200);
+  border-bottom: 1px solid map.get(colors.$gray, 200);
 
   &__container {
     @include container.base;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: map.get(size-values.$base, 3);
-    padding-bottom: map.get(size-values.$base, 3);
+    padding-top: map.get(size-values.$base, 4);
+    padding-bottom: map.get(size-values.$base, 4);
+  }
+
+  &__right-bar {
+    width: 100%;
+    margin-top: map.get(size-values.$base, 4);
+
+    @media (min-width: map.get(media-queries.$breakpoints, "sm")) {
+      width: auto;
+      margin-top: 0;
+    }
   }
 }

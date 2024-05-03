@@ -1,9 +1,10 @@
 <template>
   <header class="header">
     <div class="header__container">
-      <span>link</span>
-      <span>search</span>
-      <BaseButton variant="outlined">asd</BaseButton>
+      <LayoutDefaultLogoLink />
+      <div class="header__right-bar">
+        <LayoutDefaultSearch />
+      </div>
     </div>
   </header>
 </template>

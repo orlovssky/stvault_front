@@ -1,11 +1,10 @@
 @use "sass:map";
 @use "/assets/scss/utilities/variables/media-queries";
-@use "/assets/scss/utilities/variables/size-values";
 
 @mixin base($size: "lg") {
   width: 100%;
   max-width: map.get(media-queries.$breakpoints, $size);
   margin-right: auto;
   margin-left: auto;
-  padding: map.get(size-values.$base, 4);
+  padding: 1rem;
 }

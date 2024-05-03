@@ -1,0 +1,32 @@
+@use "/assets/scss/utilities/mixins/container";
+
+.content {
+  @include container.base;
+  min-height: calc(100vh - 54px - 62px);
+}
+
+.modal {
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__beta {
+    color: rgba(79, 70, 229, 1);
+  }
+
+  &__subtitle,
+  &__subtitle2,
+  &__button {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}

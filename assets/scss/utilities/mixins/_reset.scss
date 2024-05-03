@@ -1,0 +1,121 @@
+@mixin list {
+  unicode-bidi: normal;
+  display: block;
+
+  margin-block: 0 0;
+  margin-inline: 0 0;
+  padding-inline-start: 0;
+
+  list-style-type: disc;
+}
+
+@mixin list-item {
+  unicode-bidi: normal;
+  display: block;
+  text-align: start;
+}
+
+@mixin horizontal-rule {
+  unicode-bidi: normal;
+  overflow: visible;
+
+  margin-block: 0 0;
+  margin-inline: 0 0;
+
+  border-style: none;
+  border-width: medium;
+}
+
+@mixin anchor {
+  cursor: auto;
+  color: canvastext;
+  text-decoration: none solid currentcolor;
+  text-decoration-thickness: auto;
+}
+
+@mixin button {
+  appearance: none;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-variant-alternates: normal;
+  font-variant-position: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: medium;
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-kerning: auto;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  text-rendering: auto;
+  color: canvastext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  align-items: normal;
+  cursor: auto;
+  box-sizing: content-box;
+  background-color: transparent;
+  margin: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  border-width: medium;
+  border-style: none;
+  border-color: currentColor;
+  border-image-source: none;
+  border-image-slice: 100%;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+}
+
+@mixin input {
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-variant-alternates: normal;
+  font-variant-position: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: medium;
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  font-optical-sizing: auto;
+  font-kerning: auto;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  text-rendering: auto;
+  color: canvastext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: none;
+  cursor: text;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border-width: medium;
+  border-style: none;
+  border-color: currentColor;
+  border-image-source: none;
+  border-image-slice: 100%;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  padding-block: 0;
+  padding-inline: 0;
+}

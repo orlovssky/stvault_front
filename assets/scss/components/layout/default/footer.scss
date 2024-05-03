@@ -1,0 +1,61 @@
+@use "sass:map";
+@use "/assets/scss/utilities/variables/size-values";
+@use "/assets/scss/utilities/variables/colors";
+@use "/assets/scss/utilities/variables/media-queries";
+@use "/assets/scss/utilities/mixins/container";
+@use "/assets/scss/utilities/mixins/reset";
+
+.footer {
+  border-top: 1px solid map.get(colors.$gray, 200);
+
+  &__container {
+    @include container.base;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: map.get(size-values.$base, 4);
+
+    @media (min-width: map.get(media-queries.$breakpoints, "sm")) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+
+      & .mail {
+        justify-content: center;
+      }
+
+      & .copyright {
+        grid-column: span 1;
+
+        &__text {
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+
+.mail {
+  @include reset.anchor;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  &__icon {
+    display: inline-block;
+    width: map.get(size-values.$base, 10);
+    min-width: map.get(size-values.$base, 10);
+    height: auto;
+    margin-bottom: -#{map.get(size-values.$base, 1)};
+    margin-right: map.get(size-values.$base, 3);
+    color: map.get(colors.$primary, 600);
+  }
+}
+
+.copyright {
+  grid-column: span 2;
+
+  &__text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

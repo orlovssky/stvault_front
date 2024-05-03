@@ -31,8 +31,6 @@
 </template>
 
 <script setup lang="ts">
-import IconQuestion from "~/assets/icons/iconoir/question.svg";
-
 interface Props {
   exchangeId: string;
 }

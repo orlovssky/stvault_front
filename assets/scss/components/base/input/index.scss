@@ -1,11 +1,63 @@
+@use "sass:map";
+@use "/assets/scss/utilities/variables/colors";
+@use "/assets/scss/utilities/variables/size-values";
+@use "/assets/scss/utilities/variables/media-queries";
+@use "/assets/scss/utilities/mixins/reset";
+
 .input-field {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+
   &__input {
+    @include reset.input;
+    border-color: map.get(colors.$gray, 200);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: map.get(size-values.$radius, "md");
+    display: block;
+
+    width: 100%;
+    padding: map.get(size-values.$base, 4) map.get(size-values.$base, 5);
+
+    color: map.get(colors.$gray, 600);
+
+    &::placeholder {
+      color: map.get(colors.$gray, 400);
+    }
+
     &--prepend {
+      padding-inline-start: map.get(size-values.$base, 16);
+    }
+
+    &:focus {
+      // border-color: transparent;
+      outline: none;
     }
   }
 }
 
 .prepend {
+  pointer-events: none;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding-inline-start: map.get(size-values.$base, 6);
+
+  color: map.get(colors.$gray, 400);
+
   &__icon {
+    width: map.get(size-values.$base, 8);
+    height: map.get(size-values.$base, 8);
   }
+
+  // &:has(+ .input-field__input:focus) {
+  //   color: map.get(colors.$indigo, 600);
+  // }
 }

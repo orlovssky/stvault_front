@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "/assets/scss/utilities/variables/size-values";
+@use "/assets/scss/utilities/variables/media-queries";
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: map.get(size-values.$base, 8);
+
+  @media (min-width: map.get(media-queries.$breakpoints, "xs")) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

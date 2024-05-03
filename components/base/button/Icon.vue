@@ -11,21 +11,29 @@
       'button--md': props.size === 'md',
       'button--lg': props.size === 'lg',
       'button--xl': props.size === 'xl',
+      'button--round': props.round,
     }"
   >
-    <slot></slot>
+    <component :is="icon" class="button__icon" />
   </button>
 </template>
 
 <script setup lang="ts">
-import type { Props } from "~/typings/base/button";
+import type { DefineComponent } from "vue";
+import type { Props as ButtonProps } from "~/typings/base/button";
+
+interface Props extends ButtonProps {
+  icon: DefineComponent;
+  round?: boolean;
+}
 
 const props = withDefaults(defineProps<Props>(), {
   variant: "primary",
   size: "sm",
+  round: false,
 });
 </script>
 
 <style scoped lang="scss">
-@use "/assets/scss/components/base/button/index.scss";
+@use "/assets/scss/components/base/button/icon.scss";
 </style>

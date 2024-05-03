@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import type { DefineComponent, VNodeRef } from "vue";
+import type { DefineComponent } from "vue";
 
 interface Props {
   modelValue?: string;

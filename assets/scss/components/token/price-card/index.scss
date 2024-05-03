@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "/assets/scss/utilities/variables/size-values";
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  &__title {
+    font-weight: 700;
+    font-size: map.get(size-values.$base, 7);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    font-weight: 700;
+    font-size: map.get(size-values.$base, 5);
+
+    &:not(:last-of-type) {
+      margin-right: map.get(size-values.$base, 3);
+    }
+  }
+}
+
+.chart {
+  margin-top: map.get(size-values.$base, 8);
+}
